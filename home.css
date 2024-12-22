@@ -276,6 +276,16 @@ header nav ul li a:hover {
     font-size: 1.5rem; /* Adjust font size */
     margin-bottom: 5px;
 }
+a{
+    color: #05351e;
+    text-decoration: none;
+}
+a:hover{
+    color: #ee5306;
+    text-decoration: none;
+    cursor:pointer;
+
+}
 
 .fproduct-price {
     font-size: 1.2rem; /* Adjust font size */

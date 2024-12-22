@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Your Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn"><i class="fas fa-store"></i> Shop</a>
+                    <div class="dropdown-content">
+                        <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
+                        <a href="products.html#electronics"><i class="fa-solid fa-plug"></i> Electronics</a>
+                        <a href="products.html#toys"><i class="fa-solid fa-gamepad"></i> Toys</a>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Address</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle"><i class="fas fa-language"></i> Language</a>
+                <div class="dropdown-content">
+                    <a href="#">English</a>
+                    <a href="#">Spanish</a>
+                    <a href="#">French</a>
+                    <!-- Add more languages as needed -->
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-user"></i> Login</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Homepage Section -->
+        <section id="home" class="hero">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover the best products at unbeatable prices.</p>
+            <button class="shop-now">Shop Now</button>
+        </section>
+        
+        <!-- Shop Category Section -->
+        <section id="shop" class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list">
+                <div class="category electronics">
+                    <h3>Electronics</h3>
+                    <a href="products.html#electronics">
+                        <button class="electronics-btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="category clothing">
+                    <h3>Clothing</h3>
+                    <a href="products.html#clothing">
+                        <button class="clothing-btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="category home-garden">
+                    <h3>Home & Garden</h3>
+                    <a href="products.html#home-garden">
+                        <button class="home-garden-btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="category sports">
+                    <h3>Sports</h3>
+                    <a href="products.html#sports">
+                        <button class="sports-btn">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Product Section -->
+        <section id="fp" class="fp-bg">
+            <h2 class="featured-title">Featured</h2>
+            <div class="fp-list">
+                <a href="product.html">
+                    <div class="featured-products">
+                        <img src="Product images/headphones.jpg" alt="Product Image" class="fproduct-image">
+                        <div class="fproduct-info">
+                            <h1 class="fproduct-name">Starting ₹149 | Headphones</h1>
+                            <p class="fproduct-price"></p>
+                            <p class="fproduct-description">
+                                Ends in 24hrs</p>
+                            <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="featured-products">
+                        <img src="Product images/PC_379x304_1._SY304_CB572341311_.jpg" alt="Product Image" class="fproduct-image">
+                        <div class="fproduct-info">
+                            <h1 class="fproduct-name">Up to 60% off | Car, bike parts & accessories</h1>
+                            <p class="fproduct-price"></p>
+                            <p class="fproduct-description">Ends in 2 Days!</p>
+                            <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="featured-products">
+                        <img src="Product images/clothing.jpg" alt="Clothing" class="fproduct-image">
+                        <div class="fproduct-info">
+                            <h1 class="fproduct-name">Up to 50% off | Clothing, Jewelry & Shoes</h1>
+                            <p class="fproduct-price"></p>
+                            <p class="fproduct-description">Ends in 5 Days!</p>
+                            <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+        <ul>
+            <li><a href="#"><i class="fas fa-file-contract"></i> Privacy Policy</a></li>
+            <li><a href="#"><i class="fas fa-gavel"></i> Terms of Service</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+            <li><a href="https://github.com/yourusername/yourrepo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

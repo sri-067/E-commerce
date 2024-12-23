@@ -9,9 +9,9 @@
     <script defer src="home.js"></script>
 </head>
 <body>
-    <header>
+        <header>
         <div class="logo">
-            <img src="images/logo.png" alt="Your Logo" class="logo-image">
+            <img src="Product images/logo3.png" alt="Your Logo" class="logo-image">
         </div>
         <nav>
             <ul>
@@ -21,40 +21,40 @@
                     <div class="dropdown-content">
                         <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
                         <a href="products.html#electronics"><i class="fa-solid fa-plug"></i> Electronics</a>
-                        <a href="products.html#toys"><i class="fa-solid fa-gamepad"></i> Toys</a>
+                        <a href="products.html#toys"><i class="fa-solid fa-gamepad"></i> Aceessories</a>
                     </div>
                 </li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Address</a></li>
+                <li><a href="#footer">Address</a></li>
             </ul>
         </nav>
         <div class="search-bar">
             <form action="#" method="get">
-                <input type="text" placeholder="Search..." name="search">
+                <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
         <div class="user-actions">
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle"><i class="fas fa-language"></i> Language</a>
-                <div class="dropdown-content">
-                    <a href="#">English</a>
-                    <a href="#">Spanish</a>
-                    <a href="#">French</a>
-                    <!-- Add more languages as needed -->
-                </div>
-            </div>
             <a href="#"><i class="fas fa-user"></i> Login</a>
-            <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle"><i class="fa-solid fa-list"></i>More</a>
+                <div class="dropdown-content">
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="#blog"><i class="fa-solid fa-film"></i> Blog </a>
+                    <a href="#portfolio"><i class="fas fa-briefcase"></i> Our Portfolio</a>
+                </div>
+            </li>
         </div>
     </header>
-
     <main>
         <!-- Homepage Section -->
         <section id="home" class="hero">
             <h1>Welcome to Our Store</h1>
             <p>Discover the best products at unbeatable prices.</p>
-            <button class="shop-now">Shop Now</button>
+            <a href="#fp">
+             <button class="shop-now">Shop Now</button>
+            </a>
         </section>
         
         <!-- Shop Category Section -->
@@ -73,15 +73,15 @@
                         <button class="clothing-btn">Shop Now</button>
                     </a>
                 </div>
-                <div class="category home-garden">
-                    <h3>Home & Garden</h3>
-                    <a href="products.html#home-garden">
+                <div class="category mobiles">
+                    <h3>Mobiles & Laptops</h3>
+                    <a href="products.html#phones">
                         <button class="home-garden-btn">Shop Now</button>
                     </a>
                 </div>
-                <div class="category sports">
-                    <h3>Sports</h3>
-                    <a href="products.html#sports">
+                <div class="category accessories">
+                    <h3>electronic Acessories</h3>
+                    <a href="products.html#accessories">
                         <button class="sports-btn">Shop Now</button>
                     </a>
                 </div>
@@ -92,7 +92,7 @@
         <section id="fp" class="fp-bg">
             <h2 class="featured-title">Featured</h2>
             <div class="fp-list">
-                <a href="product.html">
+                <a href="products.html#todaydeals">
                     <div class="featured-products">
                         <img src="Product images/headphones.jpg" alt="Product Image" class="fproduct-image">
                         <div class="fproduct-info">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="product.html">
+                <a href="products.html#todaydeals">
                     <div class="featured-products">
                         <img src="Product images/PC_379x304_1._SY304_CB572341311_.jpg" alt="Product Image" class="fproduct-image">
                         <div class="fproduct-info">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="product.html">
+                <a href="products.html#todaydeals">
                     <div class="featured-products">
                         <img src="Product images/clothing.jpg" alt="Clothing" class="fproduct-image">
                         <div class="fproduct-info">
@@ -128,16 +128,86 @@
                 </a>
             </div>  
         </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                    <h2>Our Blog</h2>
+                    <div class="blog-posts">
+                        <div class="blog-post">
+                            <img src="path-to-your-image1.jpg" alt="Blog Post 1">
+                            <h3>Blog Post Title 1</h3>
+                            <p>A short description of the blog post content goes here. This is a brief summary to entice readers to click and read more.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="blog-post">
+                            <img src="path-to-your-image2.jpg" alt="Blog Post 2">
+                            <h3>Blog Post Title 2</h3>
+                            <p>A short description of the blog post content goes here. This is a brief summary to entice readers to click and read more.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="blog-post">
+                            <img src="path-to-your-image3.jpg" alt="Blog Post 3">
+                            <h3>Blog Post Title 3</h3>
+                            <p>A short description of the blog post content goes here. This is a brief summary to entice readers to click and read more.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to our company! We are dedicated to providing the best products and services to our customers. Our team is committed to excellence and customer satisfaction. Thank you for choosing us!</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="path-to-your-image.jpg" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to deliver high-quality products that meet the needs of our customers. We strive to innovate and continuously improve our offerings to stay ahead in the industry.</p>
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where our products make a significant impact on people's lives, enhancing their experiences and contributing to their success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please feel free to contact us. We are here to help!</p>
+            <form action="your-form-handler.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
     </main>
 
     <footer>
+    <div id="footer" class="footer-content">
         <p>&copy; 2024 Your Company</p>
-        <ul>
-            <li><a href="#"><i class="fas fa-file-contract"></i> Privacy Policy</a></li>
-            <li><a href="#"><i class="fas fa-gavel"></i> Terms of Service</a></li>
-            <li><a href="#"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
-            <li><a href="https://github.com/yourusername/yourrepo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <ul class="footer-social-links">
+            <li><a href="https://www.linkedin.com/school/srieshwar/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://youtube.com/@srieshwar?si=obf4Jwyv7tWjYZsS" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="#contact"  target="_blank"><i class="fas fa-phone-alt " ></i> Contact Us</a></li>
+            <li><a href="https://www.instagram.com/srieshwar_cbe?igsh=eGI5MzE1NjE5YnR6" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
         </ul>
+    </div>
     </footer>
+
 </body>
 </html>

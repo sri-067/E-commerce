@@ -1,70 +1,104 @@
-// Initialize an empty cart array
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-// Function to update the cart count
-function updateCartCount() {
-    const cartCount = document.getElementById('cart-count');
-    cartCount.textContent = cart.length;
-}
-
-// Function to render the cart items
-function renderCart() {
+document.addEventListener('DOMContentLoaded', () => {
     const cartItemsContainer = document.getElementById('cart-items');
-    const totalAmount = document.getElementById('total-amount');
-    cartItemsContainer.innerHTML = ''; // Clear previous cart items
-    let total = 0;
+    const totalPriceElement = document.getElementById('total-price');
+    const proceedToBuyButton = document.querySelector('.proceed-to-buy');
 
-    cart.forEach(item => {
-        // Create a cart item
-        const itemDiv = document.createElement('div');
-        itemDiv.classList.add('cart-item');
-        itemDiv.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-            <div class="cart-item-info">
-                <h3>${item.name}</h3>
-                <p>$${item.price}</p>
-                <button class="remove-from-cart" data-id="${item.id}">Remove</button>
-            </div>
-        `;
-        cartItemsContainer.appendChild(itemDiv);
-        total += parseFloat(item.price);
+    // Load cart from localStorage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    console.log('Loaded cart from local storage:', cart); // Debugging log
+
+    // Display cart items and update total price
+    displayCartItems(cart);
+    updateTotalPrice(cart);
+    updateCartCount(cart);
+
+    // Function to display cart items
+    function displayCartItems(cart) {
+        cartItemsContainer.innerHTML = ''; // Clear the cart display first
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            cart.forEach((product, index) => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <div class="cart-item-info">
+                        <h3>${product.name}</h3>
+                        <p>Price: ₹${product.price.toFixed(2)}</p>
+                        <button class="remove-from-cart" data-index="${index}">Remove</button>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            });
+
+            // Add event listeners for the remove buttons
+            document.querySelectorAll('.remove-from-cart').forEach(button => {
+                button.addEventListener('click', () => {
+                    const index = button.dataset.index;
+                    removeProductFromCart(index);
+                });
+            });
+        }
+    }
+
+    // Function to remove a product from the cart
+    function removeProductFromCart(index) {
+        cart.splice(index, 1); // Remove the product at the specified index
+        localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart to localStorage
+        displayCartItems(cart);
+        updateTotalPrice(cart);
+        updateCartCount(cart);
+    }
+
+    // Function to update the total price
+    function updateTotalPrice(cart) {
+        const totalPrice = cart.reduce((sum, product) => sum + product.price, 0);
+        totalPriceElement.textContent = `₹${totalPrice.toFixed(2)}`;
+    }
+
+    // Event listener for the "Proceed to Buy" button
+    proceedToBuyButton.addEventListener('click', () => {
+        alert('Proceeding to buy');
+        // Clear the cart from localStorage
+        localStorage.removeItem('cart');
+        cart = []; // Reset cart in memory
+        displayCartItems(cart);
+        updateTotalPrice(cart);
+        updateCartCount(cart);
     });
 
-    totalAmount.textContent = total.toFixed(2);
-}
-
-// Function to handle removing items from the cart
-function removeFromCart(id) {
-    cart = cart.filter(item => item.id !== id);
-    localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
-    renderCart(); // Re-render the cart
-    updateCartCount(); // Update the cart count
-}
-
-// Handle the remove buttons
-document.getElementById('cart-items').addEventListener('click', (event) => {
-    if (event.target.classList.contains('remove-from-cart')) {
-        const id = event.target.getAttribute('data-id');
-        removeFromCart(id);
+    // Function to update the cart item count in the header or navigation
+    function updateCartCount(cart) {
+        const cartCount = document.getElementById('cart-count');
+        if (cartCount) {
+            cartCount.textContent = cart.length;
+        }
     }
 });
+function displayCartItems(cart) {
+    const cartItemsContainer = document.getElementById('cart-items');
+    cartItemsContainer.innerHTML = '';
 
-// Handle Proceed to Buy button click
-document.getElementById('proceed-to-buy').addEventListener('click', () => {
-    if (cart.length === 0) {
-        alert('Your cart is empty.');
-    } else {
-        window.location.href = 'checkout.html'; // Redirect to checkout page
-    }
-});
+    cart.forEach((product, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" class="cart-item-image">
+            <div class="cart-item-info">
+                <h3>${product.name}</h3>
+                <p>Price: ₹${product.price.toFixed(2)}</p>
+                <button class="remove-from-cart" data-index="${index}">Remove</button>
+            </div>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+    });
 
-// Initial rendering of the cart
-renderCart();
-updateCartCount();
-
-// Code to handle adding items to the cart (called in Hackathon.js from product page)
-function addToCart(product) {
-    cart.push(product);
-    localStorage.setItem('cart', JSON.stringify(cart)); // Save to localStorage
-    updateCartCount(); // Update cart count in the header
+    // Add event listeners for the remove buttons
+    document.querySelectorAll('.remove-from-cart').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const index = event.target.dataset.index;
+            removeProductFromCart(index);
+        });
+    });
 }

@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart</title>
-    <link rel="stylesheet" href="products.css">
+    <title>Cart Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="products.js"></script> <!-- Include the JavaScript file -->
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="logo">
-                <img src="images/logo3.png" alt="Your Logo" class="logo-image">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="products.html"><i class="fas fa-store"></i> Shop</a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="address.html"><i class="fas fa-map-marker-alt"></i> Address</a></li>
-                </ul>
-            </nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="user-actions">
-                <a href="login.html"><i class="fas fa-user"></i> Login</a>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a>
-            </div>
-        </header>
-
-        <!-- Cart Section -->
-        <section id="cart" class="cart-page">
-            <h2>Your Cart</h2>
-            <div id="cart-items"></div>
-            <div class="cart-summary">
-                <p>Total: $<span id="total-amount">0.00</span></p>
-                <button id="proceed-to-buy" class="proceed-to-buy">Proceed to Buy</button>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Your Company</p>
+   <header>
+        <div class="logo">
+            <img src="Product images/logo3.png" alt="Your Logo" class="logo-image">
+        </div>
+        <nav>
             <ul>
-                <li><a href="privacy.html"><i class="fas fa-file-contract"></i> Privacy Policy</a></li>
-                <li><a href="terms.html"><i class="fas fa-gavel"></i> Terms of Service</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn"><i class="fas fa-store"></i> Shop</a>
+                    <div class="dropdown-content">
+                        <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
+                        <a href="products.html#electronics"><i class="fa-solid fa-plug"></i> Electronics</a>
+                        <a href="products.html#toys"><i class="fa-solid fa-gamepad"></i> Accessories</a>
+                    </div>
+                </li>
+                <li><a href="#unavailable" title="Currently unavailable">Address</a></li>
             </ul>
-        </footer>
-    </div>
+        </nav>
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search.." name="search" aria-label="Search products">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="#" aria-label="Login"><i class="fas fa-user"></i> Login</a>
+            <a href="cart.html" aria-label="View Cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle"><i class="fa-solid fa-list"></i>More</a>
+                <div class="dropdown-content">
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="#blog"><i class="fa-solid fa-film"></i> Blog</a>
+                    <a href="#portfolio"><i class="fas fa-briefcase"></i> Our Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-summary">
+            <h3>Total: <span id="total-price">₹0</span></h3>
+            <button class="proceed-to-buy">Proceed to Buy</button>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
 </body>
 </html>

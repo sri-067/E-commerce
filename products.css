@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #010000;
     color: #fff;
 }
 
@@ -190,6 +190,15 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 
 
 /* Product Section */
+.category-name{
+    background-color: #000;  /* Black background */
+    color: #fff;             /* White text */
+    padding: 20px 30px;      /* Some padding around the text */
+    text-align: center;      /* Center align the heading */
+    font-size: 2rem;         /* Optional: Adjust the font size */
+    margin-top:10px; 
+    margin-bottom: 10px;              /* Remove any default margin */
+}
 .product-category {
     padding: 20px;
     background-color: #f4f4f4;

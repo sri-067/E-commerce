@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product-details.css">
+    <script defer src="product-detail.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="Product images/logo3.png" alt="Your Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="dropbtn"><i class="fas fa-store"></i> Shop</a>
+                        <div class="dropdown-content">
+                            <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
+                            <a href="products.html#phones"><i class="fa-solid fa-laptop"></i> Mobiles & Laptops</a>
+                            <a href="products.html#home appliances"><i class="fa-solid fa-mug-saucer"></i> Home Appliances</a>
+                            <a href="products.html#accessories"><i class="fa-solid fa-gamepad"></i> Accessories</a>
+                        </div>
+                    </li>
+                    <li><a href="#unavailable" title="Currently unavailable"><i class="fa-solid fa-globe"></i>Language</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <form action="products.html" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="user-actions">
+                <a href="get"><i class="fas fa-user"></i> Login</a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">)</span>)</a> <!-- Cart count -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle"><i class="fa-solid fa-list"></i> More</a>
+                    <div class="dropdown-content">
+                        <li><a href="home.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        <a href="home.html"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="home.html"><i class="fa-solid fa-film"></i> Blog</a>
+                        <a href="portfolio.html"><i class="fas fa-briefcase"></i> Our Portfolio</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="container">
+    <!-- Product 1 -->
+    <div id="1" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/shirt1.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/shirt1-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/shirt1-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Van Heusen Men's Regular Fit Shirt</h1>
+                <p class="product-description">
+                    100% Cotton Regular Fit Long Sleeve Spread Collar Standard Length Neck style Dom Country of Origin India
+                </p>
+                <p class="product-price">₹5,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Product 2 -->
+        <div id="2" class="container">
+                <div class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/shirt2.jpg" alt="Product Image 4" class="active">
+                        <img src="Product images/Clothing/shirt2-1.jpg" alt="Product Image 5">
+                        <img src="Product images/Clothing/shirt2-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Allen Solly Men's Slim Fit Shirt</h1>
+                <p class="product-description">
+                    Occasion: Casual, Fit: Slim Fit, Material: 100% Cotton                </p>
+                <p class="product-price">₹909</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+            </div>
+    <!-- Product 3 -->
+    </div> <div class="container">
+        <div id="3" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/shirt3.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/shirt3-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/shirt3-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">U.S. POLO ASSN. Men's Solid Regular Fit T-Shirt</h1>
+                <p class="product-description">
+                    Material composition 100% Cotton Regular Fit
+                            Half Sleeve
+                            Polo Collar
+                            Standard Length
+                            Collared Neck
+                </p>
+                <p class="product-price">₹1,209</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    <!-- Product 4 --> 
+    </div> <div class="container">
+        <div id="4" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/tshirt.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/tshirt-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/tshirt-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Levi's Men's Spread Collar Slim Fit Solid Shirts</h1>
+                <p class="product-description">
+                    Material composition 100% COTTON 50X50/144X76 PLAIN
+                    Pattern Solid
+                    Slim Fit
+                    Long Sleeve
+                    Spread Collar
+                    Standard Length
+                    Country of Origin India
+                </p>
+                <p class="product-price">₹1,499</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product 5 --> 
+    </div> <div class="container">
+        <div id="5" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/tshirt2.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/tshirt2-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/tshirt2-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Levi's Men's Relaxed Fit T-Shirt</h1>
+                <p class="product-description">
+                    100% Cotton Regular Fit Long Sleeve Spread Collar Standard Length Neck style Dom Country of Origin India
+                </p>
+                <p class="product-price">₹926</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product 6 --> 
+    </div> <div class="container">
+        <div id="6" class="product">
+            <div  class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/blazer.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/blazer-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/blazer-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Allen Solly Men's Blazer</h1>
+                <p class="product-description">
+                    Material composition 63% Polyester, 35% Viscose, 2% Spandex Blazer
+                            Closure type Button
+                            Pattern Solid
+                            Country of Origin India</p>
+                <p class="product-price">₹5,249</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Product 7 --> 
+    </div> <div class="container">
+        <div id="7" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/Kurta1.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/kurta1-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/Kurta1-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">BIBA Women's Cotton Solid Regular Kurta</h1>
+                <p class="product-description">
+                    Material composition 100% Cotton 3/4 Sleeve Calf length Dom Solid A-Line
+                            Country of Origin India
+                </p>
+                <p class="product-price">₹734</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Product 8 --> 
+    </div> <div class="container">
+        <div id="5" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/womenshirt1.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/womenshirt1-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/womenshirt1-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Allen Solly Women's Regular Fit Shirt</h1>
+                <p class="product-description">
+                    Material composition 100% Polyester Regular Fit Long Sleeve Spread Collar Modern Machine Wash
+                            Country of Origin India
+                </p>
+                <p class="product-price">₹2,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Product 9 --> 
+    </div> <div class="container">
+        <div id="9" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/Kurta2.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/kurta2-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/Kurta2-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">BIBA Women Cotton Printed Fitted Salwar Kurta Dupatta</h1>
+                <p class="product-description">
+                    Material composition 100% Cotton Calf Length Long sleeve Round Neck
+                            Style Regular
+                            Country of Origin India
+                </p>
+                <p class="product-price">₹2,879</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Product 10 --> 
+    </div> <div class="container">
+        <div id="10" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/kurta3.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/kurta3-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/kurta3-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">BIBA Women Art Silk Flared Yarndyed Kurta</h1>
+                <p class="product-description">
+                    Material composition 100% POLYESTER N/A 100 % COTTON 3/4 Sleeve Standard Length Mandarin Neck Solid Classic
+                            Country of Origin India
+                </p>
+                <p class="product-price">₹2,000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Product 11 --> 
+    </div> <div class="container">
+        <div id="11" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/womenshirt1.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/womenshirt2-1.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/womenshirt2-2.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Allen Solly Women's Solid Regular Fit Formal Top</h1>
+                <p class="product-description">
+                    Material composition 95% Polyester, 5% Spandex Regular Fit Long Sleeve Crew Neck
+                            Style Modern Machine Wash
+                            Country of Origin India
+                </p>
+                <p class="product-price">₹2,599</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Product 12 --> 
+    </div> <div class="container">
+        <div id="13" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/Clothing/womenshirt3-1.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/Clothing/womenshirt3-2.jpg" alt="Product Image 2">
+                        <img src="Product images/Clothing/womenshirt3.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Allen Solly Women's Regular Fit Shirt</h1>
+                <p class="product-description">
+                    Material composition 100% Polyester Regular Fit Long Sleeve
+                            Style Modern Machine Wash
+                            Country of Origin India
+                </p>
+                <p class="product-price">₹5,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+        <div id="13" class= "product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/16promax.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/16 pro max side.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/16 pro max cable.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">iPhone 16 Pro Max</h1>
+                <p class="product-description">
+                    1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Natural Titanium
+                </p>
+                <p class="product-price">₹1,80,799</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+       <div id="14" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/iphone 16.jpg" alt="Product Image 4" class="active">
+                        <img src="Product images/mobiles/16 front.jpg" alt="Product Image 5">
+                        <img src="Product images/mobiles/16 cable.jpg" alt="Product Image 6">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">iPhone 16</h1>
+                <p class="product-description">
+                    512 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White
+                </p>
+                <p class="product-price">₹99,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="15" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/OnePlus CE-4.webp" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/CE-4 front.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/CE-4 back.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Oneplus Nord CE4</h1>
+                <p class="product-description">
+                    Celadon Marble, 8GB RAM, 128Gb Storage
+                </p>
+                <p class="product-price">₹20,000 </p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="16" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/OnePlus CE-3.webp" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/CE-3 front.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/CE-3 side.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Oneplus Nord CE 3 5G</h1>
+                <p class="product-description">
+                    Green Shimmer, 8GB RAM, 128GB Storage
+                </p>
+                <p class="product-price">₹18,990</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="17" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/S24 Ultra.webp" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/S24 ultra front.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/S24 ultra battery.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Samsung Galaxy S24 Ultra 5G AI Smartphone</h1>
+                <p class="product-description">
+                    Titanium Gray, 12GB, 256GB Storage
+                </p>
+                <p class="product-price">₹1,21,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="18" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/s23 ultra.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/S23 ultra ft.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/S23 ultra ai.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Samsung Galaxy S23 Ultra 5G AI Smartphone</h1>
+                <p class="product-description">
+                    Green, 12GB, 256GB Storage.
+                </p>
+                <p class="product-price">₹72,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="19" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/MacBook pro.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/macbook pro top.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/macbook pro chip.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Apple MacBook Pro Laptop 2024</h1>
+                <p class="product-description">
+                    MacBook Pro Laptop with M4 Max chip with 14‑core CPU and 32‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 36GB Unified Memory, 1TB SSD Storage; Space Black
+                </p>
+                <p class="product-price">₹3,09,990 </p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="20" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/MacBook.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/macbook top.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/macbook chip.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Apple 2024 MacBook Air 15</h1>
+                <p class="product-description">
+                    MacBook Air 15″ Laptop with M3 chip: 38.91 cm (15.3″) Liquid Retina Display, 16GB Unified Memory, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Starlight
+                </p>
+                <p class="product-price">₹1,27,990 </p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="21" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/Omen.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/omen front.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/omen back.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">HP Omen Gaming Laptop</h1>
+                <p class="product-description">
+                    13Th Gen Intel Core I9-13900Hx,12Gb RTX 4080 Gpu,17.3-Inch (43.9 Cm),Qhd,IPS,240Hz,300 Nits,32Gb Ddr5,1Tb Ssd,RGB Backlit Kb,B&O (Mso,Black,2.76 Kg),Ck2004Tx-Windows 11 Home
+                </p>
+                <p class="product-price">₹2,84,990 </p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="22" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/Pavilion.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/pavilion front.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/Pavilion chip.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">HP Pavilion Plus 13th Gen</h1>
+                <p class="product-description">
+                    13th Gen Intel EVO Ci7-13700H 16 GB LPDDR5 RAM, 1TB SSD, NVIDIA GeForce RTX 3050 6GB, WQXGA OLED 16"(40.6 cm),Backlit KB, (Win11,+MSO'21-N.Silver,1.9kg,),16-ab0456TX Gaming Laptop
+                </p>
+                <p class="product-price">₹1,22,900</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>v    <div class="container">
+        <div id="23" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/Samsung lap.jpg" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/samsung lap front.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/samsung lap chip.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Samsung Galaxy Book3 Pro Intel 13th Gen</h1>
+                <p class="product-description">
+                    Intel 13th Gen i7 EvoTM 35.56cm(14") Dynamic Amoled 2X, 3K Display, 120Hz, Ultra Thin & Light Laptop(16 GB/1 TB SSD/Windows 11/MS Office/Graphite/1.17Kg), NP940XFG-KC5IN
+                </p>
+                <p class="product-price">₹1,40,990</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="container">
+        <div id="24" class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Product images/mobiles/Samsung Book.webp" alt="Product Image 1" class="active">
+                        <img src="Product images/mobiles/samsung book chip.jpg" alt="Product Image 2">
+                        <img src="Product images/mobiles/samsung lap battery.jpg" alt="Product Image 3">
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Samsung Galaxy Book3</h1>
+                <p class="product-description">
+                    Core i7 13th Gen 1355U - (16 GB/512 GB SSD/Windows 11 Home) Galaxy Book3 Thin and Light Laptop (15.6 Inch, Graphite, 1.58 Kg, with MS Office)
+                </p>
+                <p class="product-price">₹74,990</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p class="review-text">This product is amazing! Highly recommend.</p>
+                    <p class="review-rating">Rating: ★★★★★</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Good value for the price.</p>
+                    <p class="review-rating">Rating: ★★★★☆</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+    <footer>
+        <div id="footer" class="footer-content">
+            <p>&copy; 2024 Emporium</p>
+            <ul class="footer-social-links">
+                <li><a href="https://www.linkedin.com/school/srieshwar/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://youtube.com/@srieshwar?si=obf4Jwyv7tWjYZsS" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="#contact"  target="_blank"><i class="fas fa-phone-alt " ></i> Contact Us</a></li>
+                <li><a href="https://www.instagram.com/srieshwar_cbe?igsh=eGI5MzE1NjE5YnR6" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        </footer>
+
+</body>
+</html>

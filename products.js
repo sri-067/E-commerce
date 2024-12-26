@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize cart
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const cartIcon = document.getElementById('cart-icon');
     const cartCount = document.getElementById('cart-count');
 
     // Update cart count display
@@ -44,11 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const productId = productDetails.getAttribute('data-product-id');
             const productName = productDetails.getAttribute('data-product-name');
             const productPrice = productDetails.getAttribute('data-product-price');
+            const productImageUrl = productDetails.querySelector('.product-image').src;
 
             const product = {
                 id: productId,
                 name: productName,
-                price: parseFloat(productPrice)
+                price: parseFloat(productPrice),
+                imageUrl: productImageUrl
             };
 
             addToCart(product);

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-images {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.product-details {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.product-title {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-description {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.discount {
+    color: #e74c3c;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.add-to-cart {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.customer-reviews {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review-text {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.review-rating {
+    color: #f39c12;
+}
+
+@media (min-width: 768px) {
+    .product {
+        flex-direction: row;
+    }
+
+    .product-images,
+    .product-details,
+    .customer-reviews {
+        width: 50%;
+    }
+
+    .product-details,
+    .customer-reviews {
+        padding-left: 20px;
+    }
+}

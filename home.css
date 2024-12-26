@@ -6,7 +6,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #f8f9fa;
+    background-color: black;
     color: #333;
 }
 
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -193,14 +193,14 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 
 /* Hero Section */
 .hero {
-    background: url("product images/temp.png") no-repeat center center/cover;
+    background: linear-gradient(to top, #000000, #b49897); /* Gradient background */
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #ffcc00;
 }
 
 .hero h1 {
@@ -214,8 +214,8 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 }
 
 .hero button {
-    background-color: #d4af37;
-    color: #fff;
+    background-color: #000000;
+    color: #ffea05;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -304,7 +304,7 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 
 /* Featured Products Section */
 .fp-bg {
-    background: url("product images/temp.png") no-repeat center center/cover;
+    background-color: #000000;
     padding: 50px 20px;
     text-align: center;
 }
@@ -350,7 +350,7 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 .fproduct-name {
     font-size: 1.5rem;
     margin-bottom: 5px;
-    color: #05351e;
+    color: #000000;
 }
 
 .fproduct-price {
@@ -385,12 +385,11 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #05351e, #0b6b3e); /* Gradient background */
+    background: linear-gradient(to bottom, #000000, #4e1d1b); /* Gradient background */
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
-    border-top: 5px solid #d4af37; /* Top border for decoration */
     position: relative; /* Ensure z-index works */
     z-index: 10;
 }
@@ -436,16 +435,7 @@ footer {
     margin-right: 5px;
 }
 
-/* Decorative Elements */
-.footer-content::before,
-.footer-content::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 5px;
-    background: #d4af37; /* Gold border */
-}
+
 
 .footer-content::before {
     left: 0;
@@ -457,68 +447,6 @@ footer {
     transform: translateY(100%); /* Position at the bottom */
 }
 
-/* Cart Page */
-.cart-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.cart-page h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.cart-page table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-.cart-page th,
-.cart-page td {
-    padding: 10px;
-    text-align: left;
-}
-
-.cart-page th {
-    background-color: #333;
-    color: #fff;
-}
-
-.cart-page td {
-    border-bottom: 1px solid #ccc;
-}
-
-.cart-page td img {
-    max-width: 100px;
-    height: auto;
-}
-
-.cart-page .total {
-    text-align: right;
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-.cart-page .checkout-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #05351e;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cart-page .checkout-btn:hover {
-    background-color: #d4af37;
-}
 
 /* Media Queries */
 @media (max-width: 1200px) {
@@ -596,7 +524,7 @@ footer {
 }
 /* General link styles */
 a {
-    color: #05351e;  /* Change this to your desired link color */
+    color: #000704;  /* Change this to your desired link color */
     text-decoration: none;  /* Remove underline */
 }
 
@@ -608,7 +536,7 @@ a:hover {
 
 /* Specific link styles within your product card, if needed */
 .product-card a {
-    color: #05351e;  /* Change this to your desired link color */
+    color: #000000;  /* Change this to your desired link color */
     text-decoration: none;  /* Remove underline */
 }
 
@@ -622,21 +550,23 @@ a:hover {
 /* About Section */
 .about {
     padding: 60px 20px;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #ccacab, #000000); /* Gradient background */
     color: #333;
     text-align: center;
 }
 
 .about .container {
+    background-color: #fffefe;
+    border-radius: 10px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #05351e; /* Dark green color for the heading */
+    color: #000000; /* Dark green color for the heading */
     background-color: ghostwhite;
 }
 
@@ -674,7 +604,7 @@ a:hover {
 .about-text h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #05351e; /* Dark green color for subheadings */
+    color: #000000; /* Dark green color for subheadings */
 }
 
 .about-text p {
@@ -685,82 +615,20 @@ a:hover {
 /* Blog Section */
 .blog {
     padding: 60px 20px;
-    background-color: #fff;
+    margin-top: 20px;
+    background: linear-gradient(to top, #ccacab, #000000); /* Gradient background */
     color: #333;
     text-align: center;
 }
 
 .blog .container {
+    background-color: white;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-/* Contact Section */
-.contact {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-}
-
-.contact .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    background-color: black;
-    color: whitesmoke;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.contact .form-group label {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-.contact .form-group input,
-.contact .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact button {
-    background-color: #d4af37; /* Gold button color */
-    color: #fff;
-    border: none;
+    border-radius: 10px;
     padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.contact button:hover {
-    background-color: #c39528; /* Darker gold on hover */
-}
 
 
 .blog-posts {
@@ -772,7 +640,8 @@ a:hover {
 
 .blog-post {
     flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-    background-color: #f4f4f4;
+    background-color: #000000;
+    color: #ccc;
     padding: 20px;
     border-radius: 10px;
     text-align: left;
@@ -788,7 +657,7 @@ a:hover {
 .blog-post h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #05351e; /* Dark green color for subheadings */
+    color: #000000; /* Dark green color for subheadings */
 }
 
 .blog-post p {
@@ -796,7 +665,12 @@ a:hover {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-
+.blog h3{
+    color:#d4af37 ;
+}
+.blg{
+    color:#d4af37 ;
+}
 .blog-post a {
     color: #d4af37; /* Gold color for links */
     text-decoration: none;
@@ -810,21 +684,23 @@ a:hover {
 /* Contact Section */
 .contact {
     padding: 60px 20px;
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: #333;
     text-align: center;
 }
 
 .contact .container {
+    background-color: #ffffff;
     max-width: 800px;
+    border-radius: 10px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 30px;
 }
 
 .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #05351e; /* Dark green color for the heading */
+    color: #000000; /* Dark green color for the heading */
 }
 
 .contact p {
@@ -860,8 +736,8 @@ a:hover {
 }
 
 .contact button {
-    background-color: #d4af37; /* Gold button color */
-    color: #fff;
+    background-color: #000000; /* Gold button color */
+    color: #f0e51a;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -873,8 +749,8 @@ a:hover {
     background-color: #c39528; /* Darker gold on hover */
 }
 h2 {
-    background-color: #d4af37;  /* Gold background color */
-    color: #fff;                /* White text color */
+    background-color: #ffffff;  /* Gold background color */
+    color: #000000;                /* White text color */
     padding: 10px 20px;         /* Add padding for spacing */
     border-radius: 5px;         /* Optional: rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
@@ -883,8 +759,17 @@ h2 {
 }
 /* About Section */
 .about h2 {
-    background-color: #d4af37;  /* Gold background color */
-    color: #fff;                /* White text color */
+    background-color: #000000;  /* Gold background color */
+    color: #ffffff;                /* White text color */
+    padding: 10px 20px;         /* Add padding for spacing */
+    border-radius: 5px;         /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+    font-size: 2.5rem;          /* Ensure it's large enough */
+    margin-bottom: 20px;        /* Space below */
+}
+.blog h2 {
+    background-color: #000000;  /* Gold background color */
+    color: #ffffff;                /* White text color */
     padding: 10px 20px;         /* Add padding for spacing */
     border-radius: 5px;         /* Optional: rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
@@ -894,8 +779,8 @@ h2 {
 
 /* Contact Section */
 .contact h2 {
-    background-color: #d4af37;  /* Gold background color */
-    color: #fff;                /* White text color */
+    background-color: #000000;  /* Gold background color */
+    color: #ffffff;                /* White text color */
     padding: 10px 20px;         /* Add padding for spacing */
     border-radius: 5px;         /* Optional: rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */

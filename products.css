@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to top, #000000, #4e1d1b); /* Gradient background */
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -20,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #010000;
     color: #fff;
 }
 
@@ -190,9 +191,18 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 
 
 /* Product Section */
+.category-name{
+    background-color: #000;  /* Black background */
+    color: #fff;             /* White text */
+    padding: 20px 30px;      /* Some padding around the text */
+    text-align: center;      /* Center align the heading */
+    font-size: 2rem;         /* Optional: Adjust the font size */
+    margin-top:10px; 
+    margin-bottom: 10px;              /* Remove any default margin */
+}
 .product-category {
     padding: 20px;
-    background-color: #f4f4f4;
+    background: linear-gradient(to top,#b49897, #000000); /* Gradient background */
     flex: 1;
     text-align: center;
 }
@@ -276,135 +286,67 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background: linear-gradient(to bottom, #000000, #4e1d1b); /* Gradient background */
     color: #fff;
-    padding: 20px;
     text-align: center;
-    margin-top: auto;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative; /* Ensure z-index works */
+    z-index: 10;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
-    margin: 0 15px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-footer ul li a:hover {
-    color: #f0a500;
-}
-
-/* Add styles for the Cart Page */
-.cart-page {
-    padding: 20px;
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.cart-page h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ccc;
+.footer-content p {
+    font-size: 1.2rem; /* Slightly larger font size */
     margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
 }
 
-.cart-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.cart-item-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cart-item-info h3 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.cart-item-info p {
-    margin: 5px 0;
-}
-
-.remove-from-cart {
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.remove-from-cart:hover {
-    background-color: darkred;
-}
-
-.cart-summary {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.proceed-to-buy {
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.proceed-to-buy:hover {
-    background-color: darkgreen;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
-}
-
-footer ul {
+.footer-social-links {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0;
     display: flex;
     justify-content: center;
+    gap: 20px; /* Space between footer links */
 }
 
-footer ul li {
-    margin: 0 15px;
+.footer-social-links li {
+    display: inline-block;
 }
 
-footer ul li a {
+.footer-social-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem; /* Slightly larger icons */
+    font-family: 'Arial', sans-serif;
 }
 
-footer ul li a:hover {
-    color: #f0a500;
+.footer-social-links a:hover {
+    color: #d4af37; /* Gold hover color */
+    transform: scale(1.1);
 }
+
+.footer-social-links i {
+    margin-right: 5px;
+}
+
+
+
+.footer-content::before {
+    left: 0;
+    transform: translateY(-100%); /* Position at the top */
+}
+
+.footer-content::after {
+    right: 0;
+    transform: translateY(100%); /* Position at the bottom */
+}
+

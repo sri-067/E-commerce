@@ -33,11 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.carousel').forEach(carouselElement => {
         initializeCarousel(carouselElement);
     });
-
-    // Add to Cart functionality
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-        button.addEventListener('click', () => {
-            alert('Product added to cart!');
-        });
-    });
 });

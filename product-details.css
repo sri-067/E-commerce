@@ -1,6 +1,11 @@
-body{
-    background: linear-gradient(to top, #000000, #4e1d1b); /* Gradient background */
-
+/* General Styles */
+body, html {
+    
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #b49897); /* Gradient background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
@@ -271,7 +276,7 @@ nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
 }
 
 .add-to-cart {
-    background-color: #2ecc71;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -383,3 +388,14 @@ footer {
     transform: translateY(100%); /* Position at the bottom */
 }
 
+/* General link styles */
+a {
+    color: #05351e;  /* Change this to your desired link color */
+    text-decoration: none;  /* Remove underline */
+}
+
+a:hover {
+    color: #ee5306;  /* Change this to your desired hover color */
+    text-decoration: none;  /* Ensure underline doesn't appear on hover */
+    cursor: pointer;
+}

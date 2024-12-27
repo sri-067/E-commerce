@@ -350,21 +350,3 @@ footer {
     transform: translateY(100%); /* Position at the bottom */
 }
 
-
-/* Carousel Styles */ 
-.carousel-inner img { 
-    width: 100%; 
-    height: auto; 
-}
-
-/* General link styles */
-a {
-    color: #05351e;  /* Change this to your desired link color */
-    text-decoration: none;  /* Remove underline */
-}
-
-a:hover {
-    color: #ee5306;  /* Change this to your desired hover color */
-    text-decoration: none;  /* Ensure underline doesn't appear on hover */
-    cursor: pointer;
-}
